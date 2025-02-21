@@ -8,6 +8,7 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 app.get('/digital-library', (req, res) => {
+    // res.setHeader('Content-Type', 'text/html');
     res.render('digitalLibrary');
 });
 
