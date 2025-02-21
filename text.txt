@@ -198,3 +198,11 @@
         
           
     </div>
+
+
+
+    RewriteEngine On
+
+# Redirect all requests to /digital-library to your Node.js app
+RewriteRule ^ibneyousaf1$ http://localhost:3000/digital-library [P]
+RewriteRule ^ibneyousaf1/(.*)$ http://localhost:3000/digital-library/$1 [P]
