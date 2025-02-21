@@ -8,7 +8,7 @@ const port = 3000;
 // Set the views directory
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.render('home');
 });
 
@@ -17,6 +17,7 @@ app.get('/digitallibrary', (req, res) => {
     res.send('digitalLibrary');
 });
 app.get('/about', (req, res) => {
+
     res.send('about');
 });
 
