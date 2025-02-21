@@ -16,6 +16,9 @@ app.get('/digitallibrary', (req, res) => {
     // res.setHeader('Content-Type', 'text/html');
     res.send('digitalLibrary');
 });
+app.get('/about', (req, res) => {
+    res.send('about');
+});
 
 
 app.listen(port, () => {
