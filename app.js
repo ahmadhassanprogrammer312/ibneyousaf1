@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
-app.get('/digital-library', (req, res) => {
+app.get('/digitallibrary', (req, res) => {
     // res.setHeader('Content-Type', 'text/html');
     res.send('digitalLibrary');
 });
