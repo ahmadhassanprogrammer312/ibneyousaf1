@@ -7,6 +7,9 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
     res.render('home');
 });
+app.get('/digital-library', (req, res) => {
+    res.render('digitalLibrary');
+});
 
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`);
