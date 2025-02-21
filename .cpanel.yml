@@ -1,6 +1,19 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/ibneyou1/public_html/ibneyousaf1/
-    - /bin/cp -R ibneyousaf1 $DEPLOYPATH
-    
+    - export NODE_ENV=production
+    - /bin/npm install
+    - /bin/npm run build
+
+application:
+  name: digital-library
+  script: app.js
+  env:
+    NODE_ENV: production
+    PORT: 3000
+  cwd: /home/ibneyou1/public_html/ibneyousaf1
+
+server:
+  rewrite:
+    - from: /digital-library
+      to: http://localhost:3000/digital-library
