@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 });
 app.get('/digital-library', (req, res) => {
     // res.setHeader('Content-Type', 'text/html');
-    res.render('digitalLibrary');
+    res.send('digitalLibrary');
 });
 
 app.listen(port, () => {
